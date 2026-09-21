@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LandCo Properties & Construction | Company Portfolio</title>
+<meta name="description" content="LandCo Properties & Construction — residential plots, construction and interior solutions in Bengaluru.">
+<style>
+:root{--green:#168a24;--dark:#0e140e;--gold:#e79516;--cream:#f7f5ef;--muted:#6a6d68;--line:#e5e7e2}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:#151715;background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit} .container{width:min(1160px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between} .logo{height:54px;width:auto;object-fit:contain}
+.links{display:flex;gap:28px;font-size:14px;font-weight:700} .links a:hover{color:var(--green)}
+.hero{min-height:650px;display:grid;place-items:center;text-align:center;padding:80px 20px;background:radial-gradient(circle at 50% 0,#e9f5e8,transparent 45%),linear-gradient(#fbfcfa,#fff)}
+.hero-logo{width:min(330px,70vw);mix-blend-mode:multiply} .tag{display:inline-block;margin:22px 0 12px;padding:7px 14px;border-radius:50px;background:#edf7ed;color:#075d18;font-size:12px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase}
+h1{font-size:clamp(40px,6vw,70px);line-height:1.02;letter-spacing:-2.5px;margin:5px 0 20px} h1 span{color:var(--gold)} .hero p{max-width:780px;margin:auto;color:#5e625e;font-size:18px}
+.buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:30px} .btn{padding:13px 22px;border:1px solid var(--green);border-radius:8px;font-size:14px;font-weight:800}
+.primary{background:var(--green);color:#fff} .secondary{color:#075d18;background:#fff}
+section{padding:88px 0} .kicker{font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:var(--green);font-weight:900}
+h2{font-size:clamp(30px,4vw,48px);line-height:1.08;letter-spacing:-1.2px;margin:8px 0 14px} .head{max-width:760px;margin-bottom:38px} .head p{color:var(--muted);margin:0}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center} .about p{color:#555}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px} .stat{padding:25px;background:#f5f7f3;border:1px solid var(--line);border-radius:15px}
+.stat b{display:block;font-size:21px;color:#075d18} .stat span{font-size:14px;color:#6a6d68}
+.services{background:#f5f7f3} .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px;min-height:205px} .icon{font-size:27px;color:var(--green)}
+.card h3{margin:12px 0 8px} .card p{margin:0;color:#666;font-size:14px}
+.work{background:var(--dark);color:#fff} .work .head p{color:#b9c0b7}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:18px} figure{margin:0}
+.project{position:relative;overflow:hidden;border-radius:16px;background:#151a15;border:1px solid #303830}
+.project:first-child{grid-column:span 2} .project img{width:100%;height:360px;object-fit:cover;display:block;transition:transform .45s}
+.project:first-child img{height:500px} .project:hover img{transform:scale(1.025)}
+figcaption{position:absolute;left:0;right:0;bottom:0;padding:48px 24px 20px;background:linear-gradient(transparent,rgba(0,0,0,.88));display:flex;flex-direction:column}
+figcaption strong{font-size:21px} figcaption span{font-size:13px;color:#d2d7d0}
+.note{margin-top:18px;padding:14px 17px;border-left:3px solid var(--gold);background:#171c17;color:#cbd1c8;font-size:13px;border-radius:0 8px 8px 0}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:15px} .step{border-top:3px solid var(--green);padding:18px 6px}
+.step b{color:var(--green);font-size:13px} .step h3{margin:7px 0} .step p{color:#666;font-size:14px;margin:0}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:18px} .value{padding:25px;border-left:3px solid var(--gold);background:#fff;border-top:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.value h3{margin:0 0 8px} .value p{margin:0;color:#666;font-size:14px}
+.contact{background:linear-gradient(135deg,#f3f8f1,#fff)} .contact-box{display:grid;grid-template-columns:1fr .8fr;gap:35px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:40px}
+.contact-list{display:grid;gap:14px;color:#555} .contact-list b{color:#171717}
+footer{border-top:1px solid var(--line);padding:28px 0;color:#777;font-size:13px} .foot{display:flex;justify-content:space-between;align-items:center;gap:20px} .foot img{height:48px;width:auto}
+
+.designer-section{background:#fff}
+.designer-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;margin-bottom:20px}
+.designer-main,.designer-card{border:1px solid var(--line);border-radius:18px;padding:30px;background:#fafbf9}
+.designer-main{background:linear-gradient(135deg,#f2f8ef,#fff)}
+.mini-label{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;font-weight:900;color:var(--green)}
+.designer-main h3,.designer-card h3{font-size:25px;margin:8px 0 10px}
+.designer-main p,.designer-card p{color:#60645f;margin:0 0 18px}
+.pill-row{display:flex;flex-wrap:wrap;gap:9px}
+.pill-row span{padding:8px 11px;border-radius:30px;background:#fff;border:1px solid #dfe5dc;font-size:12px;font-weight:700;color:#3f493e}
+.designer-card ul{padding-left:19px;margin:0;color:#555;font-size:14px}
+.designer-card li{margin:8px 0}
+.expectation-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}
+.expectation{padding:24px;border-top:3px solid var(--gold);background:#f7f7f5;border-radius:0 0 12px 12px}
+.expectation span{font-size:12px;color:var(--green);font-weight:900}
+.expectation h3{font-size:17px;margin:7px 0}
+.expectation p{font-size:13px;color:#666;margin:0}
+.software-box{margin-top:18px;padding:28px;border-radius:18px;background:#10150f;color:#fff;display:grid;grid-template-columns:.65fr 1.35fr;gap:25px;align-items:start}
+.software-box .mini-label{color:#a7d5a1}
+.software-box h3{margin:7px 0 0;font-size:23px}
+.software-list{display:flex;flex-wrap:wrap;gap:9px}
+.software-list span{border:1px solid #465046;border-radius:30px;padding:8px 11px;font-size:12px;color:#dbe2d8}
+.software-box p{grid-column:2;color:#aeb7aa;font-size:13px;margin:0}
+
+@media(max-width:800px){.designer-grid,.software-box{grid-template-columns:1fr}.expectation-grid{grid-template-columns:1fr 1fr}.software-box p{grid-column:auto}.links{display:none}.about,.contact-box{grid-template-columns:1fr}.cards,.values{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr}}
+@media(max-width:540px){.expectation-grid{grid-template-columns:1fr}section{padding:62px 0}.cards,.values,.process,.gallery{grid-template-columns:1fr}.project:first-child{grid-column:auto}.project img,.project:first-child img{height:320px}.stats{grid-template-columns:1fr}.contact-box{padding:26px}}
+</style>
+</head>
+<body>
+<nav><div class="container nav"><a href="#top"><img class="logo" src="landco-logo.jpeg" alt="LandCo Properties & Construction"></a>
+<div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#work">Our Work</a><a href="#designer">Design Direction</a><a href="#approach">Approach</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="hero" id="top"><div class="container">
+<img class="hero-logo" src="landco-logo.jpeg" alt="LandCo Properties & Construction logo">
+<div class="tag">Properties • Construction • Interiors</div>
+<h1>Building spaces with <span>purpose.</span></h1>
+<p>LandCo Properties & Construction is a Bengaluru-based real estate and construction company focused on residential plots, home construction and thoughtfully designed interiors.</p>
+<div class="buttons"><a class="btn primary" href="#work">View Our Work</a><a class="btn secondary" href="https://maps.app.goo.gl/gwvBAjbfNUaA5JKN8?g_st=aw" target="_blank">Find Our Office</a></div>
+</div></header>
+
+<section id="about"><div class="container"><div class="about">
+<div><div class="kicker">Who we are</div><h2>From land to a finished home.</h2>
+<p>LandCo Properties & Construction brings property development and residential construction together under one roof. We help customers find residential plots in Bengaluru and provide construction solutions either as a complete plot-plus-construction package or as construction services for an existing plot.</p>
+<p>Our approach combines practical planning, contemporary residential design, quality execution and a strong focus on comfortable, functional homes.</p></div>
+<div class="stats"><div class="stat"><b>Bengaluru</b><span>Primary market</span></div><div class="stat"><b>Yelahanka</b><span>Office location</span></div><div class="stat"><b>Residential Plots</b><span>Property solutions</span></div><div class="stat"><b>End-to-End</b><span>Construction & interiors</span></div></div>
+</div></div></section>
+
+<section class="services" id="services"><div class="container"><div class="head"><div class="kicker">What we do</div><h2>Property & construction solutions.</h2><p>Services covering the key stages of creating a residential property.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">◈</div><h3>Residential Plots</h3><p>Residential plot opportunities in and around Bengaluru for customers planning their future homes or property investment.</p></div>
+<div class="card"><div class="icon">⌂</div><h3>Home Construction</h3><p>Residential construction services from planning and execution through finishing and handover.</p></div>
+<div class="card"><div class="icon">✦</div><h3>Plot + Construction</h3><p>A combined solution for customers looking for both a suitable plot and a construction package.</p></div>
+<div class="card"><div class="icon">▦</div><h3>Interior Design</h3><p>Contemporary residential interiors with attention to space planning, materials, finishes, lighting and functionality.</p></div>
+<div class="card"><div class="icon">◫</div><h3>3D Visualization</h3><p>Detailed design concepts and realistic visual presentations that help clients understand the proposed space.</p></div>
+<div class="card"><div class="icon">✓</div><h3>Project Coordination</h3><p>Coordination between design, construction and finishing requirements to maintain consistency throughout the project.</p></div>
+</div></div></section>
+
+
+<section class="designer-section" id="designer">
+  <div class="container">
+    <div class="head">
+      <div class="kicker">Our design direction</div>
+      <h2>Design standards we are building at LandCo.</h2>
+      <p>
+        As our residential construction portfolio grows, we are developing an in-house design
+        capability that combines strong space planning, contemporary aesthetics and realistic
+        visualization.
+      </p>
+    </div>
+
+    <div class="designer-grid">
+      <div class="designer-main">
+        <div class="mini-label">Interior design focus</div>
+        <h3>Modern residential interiors</h3>
+        <p>
+          We are looking for designs that feel premium without becoming impractical. Every space
+          should balance aesthetics, storage, movement, lighting, materials and day-to-day usability.
+        </p>
+        <div class="pill-row">
+          <span>Space Planning</span><span>Modular Kitchens</span><span>Living Rooms</span>
+          <span>Bedrooms</span><span>TV Units</span><span>False Ceiling</span>
+          <span>Lighting</span><span>Material Selection</span>
+        </div>
+      </div>
+
+      <div class="designer-card">
+        <div class="mini-label">Visual quality</div>
+        <h3>From concept to realistic render</h3>
+        <p>
+          We value clear presentations that allow a customer to understand the proposed home
+          before execution.
+        </p>
+        <ul>
+          <li>Accurate layouts and furniture planning</li>
+          <li>Realistic 3D modelling and rendering</li>
+          <li>Good material and colour combinations</li>
+          <li>Professional presentation sheets</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="expectation-grid">
+      <div class="expectation">
+        <span>01</span><h3>Design Thinking</h3>
+        <p>Understand the family, lifestyle, space constraints and budget before designing.</p>
+      </div>
+      <div class="expectation">
+        <span>02</span><h3>Technical Knowledge</h3>
+        <p>Understand dimensions, furniture clearances, materials, finishes, lighting and execution details.</p>
+      </div>
+      <div class="expectation">
+        <span>03</span><h3>Software Skills</h3>
+        <p>Comfort with industry-standard tools for 2D drawings, 3D modelling, rendering and presentations.</p>
+      </div>
+      <div class="expectation">
+        <span>04</span><h3>Execution Awareness</h3>
+        <p>Designs should be practical to build, quote, coordinate and maintain on residential projects.</p>
+      </div>
+    </div>
+
+    <div class="software-box">
+      <div>
+        <div class="mini-label">Preferred toolkit</div>
+        <h3>Software & deliverables</h3>
+      </div>
+      <div class="software-list">
+        <span>AutoCAD</span><span>SketchUp</span><span>3ds Max</span>
+        <span>V-Ray</span><span>Enscape</span><span>Lumion</span>
+        <span>Photoshop</span><span>PowerPoint / Presentation</span>
+      </div>
+      <p>
+        Exact software combinations can vary. What matters most is the ability to produce accurate
+        drawings, convincing 3D views and professional client-ready presentations.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="work" id="work"><div class="container"><div class="head"><div class="kicker">Selected interior work</div><h2>Spaces designed for modern living.</h2><p>A selection of residential interior work showcasing our design direction, material choices, lighting and attention to detail.</p></div>
+<div class="gallery"><figure class="project">
+      <img src="interior-1.jpeg" alt="Modern luxury kitchen interior">
+      <figcaption><strong>Modern Kitchen</strong><span>Warm wood, stone textures & integrated lighting</span></figcaption>
+    </figure>
+<figure class="project">
+      <img src="interior-2.jpeg" alt="Contemporary living room with staircase">
+      <figcaption><strong>Contemporary Living</strong><span>Neutral palette with statement staircase</span></figcaption>
+    </figure>
+<figure class="project">
+      <img src="interior-3.jpeg" alt="Luxury living room and staircase">
+      <figcaption><strong>Open Living Space</strong><span>Layered lighting, natural materials & clean geometry</span></figcaption>
+    </figure>
+<figure class="project">
+      <img src="interior-4.jpeg" alt="Modern kitchen with breakfast counter">
+      <figcaption><strong>Luxury Kitchen</strong><span>Functional planning with premium finishes</span></figcaption>
+    </figure>
+<figure class="project">
+      <img src="interior-5.jpeg" alt="Modern TV wall and living room">
+      <figcaption><strong>Living Room</strong><span>Marble-look feature wall with ambient lighting</span></figcaption>
+    </figure></div>
+<div class="note">More construction and completed-project photographs will be added as our current projects progress. We prefer to showcase genuine project work rather than use unrelated stock photography.</div>
+</div></section>
+
+<section id="approach"><div class="container"><div class="head"><div class="kicker">Our approach</div><h2>Simple, practical and design-focused.</h2></div>
+<div class="process">
+<div class="step"><b>01</b><h3>Understand</h3><p>Understand the site, lifestyle, requirements and budget.</p></div>
+<div class="step"><b>02</b><h3>Design</h3><p>Develop functional layouts, material concepts and visual presentations.</p></div>
+<div class="step"><b>03</b><h3>Build</h3><p>Translate approved designs into coordinated construction and interiors.</p></div>
+<div class="step"><b>04</b><h3>Deliver</h3><p>Focus on finishing quality, usability and a complete customer experience.</p></div>
+</div></div></section>
+
+<section><div class="container"><div class="head"><div class="kicker">What we value</div><h2>Creating homes, not just structures.</h2></div>
+<div class="values"><div class="value"><h3>Functional Design</h3><p>Design decisions should have a practical purpose and work for everyday living.</p></div>
+<div class="value"><h3>Contemporary Aesthetics</h3><p>Clean forms, balanced materials, lighting and a modern residential design language.</p></div>
+<div class="value"><h3>Quality Execution</h3><p>Attention to construction details, finishes and coordination between design and execution.</p></div></div></div></section>
+
+<section class="contact" id="contact"><div class="container"><div class="contact-box"><div><div class="kicker">Get in touch</div><h2>Let's build something meaningful.</h2><p style="color:#666">For plot enquiries, residential construction, interiors and project discussions, visit our Yelahanka office.</p>
+<div class="buttons" style="justify-content:flex-start"><a class="btn primary" href="https://maps.app.goo.gl/gwvBAjbfNUaA5JKN8?g_st=aw" target="_blank">Open Location in Maps</a></div></div>
+<div class="contact-list"><div><b>Company</b><br>LandCo Properties & Construction</div><div><b>Location</b><br>Yelahanka, Bengaluru, Karnataka</div><div><b>Services</b><br>Plots • Construction • Interiors</div></div></div></div></section>
+
+<footer><div class="container foot"><img src="landco-logo.jpeg" alt="LandCo"><div>© 2026 LandCo Properties & Construction. All rights reserved. · Bengaluru</div></div></footer>
+</body></html>
