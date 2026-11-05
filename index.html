@@ -42,6 +42,74 @@ footer{background:#0d2d20;color:#fff;padding:50px 0 24px}.footer-grid{display:gr
 .reveal{opacity:0;transform:translateY(22px);transition:.7s ease}.reveal.visible{opacity:1;transform:none}
 @media(max-width:950px){.nav-links{display:none}.menu{display:block}.service-grid{grid-template-columns:1fr 1fr}.property-layout,.control-grid,.career-card,.about-grid,.contact-grid{grid-template-columns:1fr}.phase-grid{grid-template-columns:1fr 1fr}.journey-grid{grid-template-columns:repeat(3,1fr)}.property-gallery{grid-template-columns:1fr 1fr}.section-head{display:block}.section-head p{margin-top:16px}.control-list{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:620px){.container{width:min(calc(100% - 28px),var(--max))}.nav-inner{height:70px}.brand img{width:46px;height:46px}.brand-copy strong{font-size:.88rem}.hero{min-height:auto}.hero-inner{padding:52px 0 60px}.hero-logo{width:205px}.hero h1{font-size:3.05rem}.hero-lead{font-size:.96rem}.hero-meta{gap:12px 20px;margin-top:30px}.hero-meta span{font-size:.76rem}.actions .btn{width:100%}section{padding:75px 0}.service-grid,.phase-grid,.property-gallery,.journey-grid,.control-list,.interior-note,.footer-grid{grid-template-columns:1fr}.property-gallery figure{height:230px}.construction-grid{grid-template-columns:1fr}.construction-photo{min-height:310px}.interior-mosaic{display:grid;grid-template-columns:1fr;grid-template-rows:250px 180px 180px}.interior-mosaic figure:first-child{grid-row:auto}.career-card{padding:28px}.copyright{display:block}.copyright span{display:block;margin-top:8px}.facts{grid-template-columns:1fr 1fr}}
+/* residential showcase */
+.projects{background:#fff}
+.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.project-card{background:var(--cream);border:1px solid var(--line);border-radius:24px;overflow:hidden;transition:.3s transform,.3s box-shadow;display:flex;flex-direction:column}
+.project-card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:#b8cec0}
+.project-img-wrap{position:relative;height:340px;overflow:hidden;background:#ddd;cursor:pointer}
+.project-img-wrap img{width:100%;height:100%;object-fit:cover;transition:.6s cubic-bezier(.16,1,.3,1)}
+.project-card:hover .project-img-wrap img{transform:scale(1.06)}
+.project-tag{position:absolute;top:18px;left:18px;background:rgba(18,61,42,.9);backdrop-filter:blur(8px);color:#fff;padding:6px 14px;border-radius:999px;font-size:.74rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.project-zoom-btn{position:absolute;bottom:18px;right:18px;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);display:grid;place-items:center;color:var(--green);font-size:1.1rem;border:0;cursor:pointer;opacity:0;transform:scale(.8);transition:.25s ease}
+.project-card:hover .project-zoom-btn{opacity:1;transform:scale(1)}
+.project-body{padding:28px;display:flex;flex-direction:column;flex-grow:1;gap:14px}
+.project-body h3{font-family:'Playfair Display',Georgia,serif;font-size:1.55rem;color:var(--ink)}
+.project-specs{display:flex;flex-wrap:wrap;gap:8px}
+.spec-chip{background:var(--green-3);color:var(--green);font-size:.78rem;font-weight:700;padding:5px 12px;border-radius:8px}
+.project-body p{font-size:.92rem;line-height:1.6}
+.project-features{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding-top:10px;border-top:1px solid var(--line);font-size:.82rem;color:#49534c}
+.project-features span{display:flex;align-items:center;gap:6px}
+.project-features span:before{content:'✦';color:var(--gold);font-size:.7rem}
+.project-footer{margin-top:auto;padding-top:16px;display:flex;align-items:center;justify-content:space-between}
+/* packages */
+.packages{background:#f0f5f1}
+.package-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:45px}
+.package-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:32px 28px;display:flex;flex-direction:column;position:relative;transition:.3s transform,.3s box-shadow}
+.package-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.package-card.featured{border:2px solid var(--gold);box-shadow:0 20px 50px rgba(18,61,42,.12);background:#fff}
+.pkg-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--gold);color:#172019;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:5px 16px;border-radius:999px;white-space:nowrap}
+.pkg-header{border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:20px}
+.pkg-header h3{font-family:'Playfair Display',Georgia,serif;font-size:1.75rem;margin-bottom:6px}
+.pkg-subtitle{font-size:.84rem;color:var(--muted);min-height:38px}
+.pkg-price{display:flex;align-items:baseline;gap:6px;margin-top:14px}
+.pkg-price strong{font-size:2.35rem;font-weight:800;color:var(--green);letter-spacing:-.03em}
+.pkg-price span{font-size:.82rem;color:var(--muted)}
+.pkg-features{list-style:none;display:grid;gap:12px;margin-bottom:28px;flex-grow:1}
+.pkg-features li{font-size:.87rem;color:#333d36;display:flex;align-items:flex-start;gap:10px;line-height:1.45}
+.pkg-check{width:18px;height:18px;border-radius:50%;background:var(--green-3);color:var(--green);display:inline-flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:900;flex-shrink:0;margin-top:2px}
+.package-card.featured .pkg-check{background:var(--green);color:#fff}
+.pkg-cta{width:100%;text-align:center;padding:13px;border-radius:12px;font-weight:800;font-size:.92rem;transition:.2s;display:block}
+/* calculator */
+.calc-card{background:var(--green);color:#fff;border-radius:26px;padding:44px 48px;display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:center;box-shadow:var(--shadow)}
+.calc-card h3{font-family:'Playfair Display',Georgia,serif;font-size:2rem;margin-bottom:10px}
+.calc-card p{color:#c9d8ce;font-size:.95rem;margin-bottom:26px}
+.calc-group{margin-bottom:20px}
+.calc-label{display:block;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#d8e8dc;margin-bottom:10px}
+.calc-chips{display:flex;flex-wrap:wrap;gap:8px}
+.calc-chip{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;padding:8px 15px;border-radius:10px;font-size:.84rem;font-weight:600;cursor:pointer;transition:.2s}
+.calc-chip:hover{background:rgba(255,255,255,.2)}
+.calc-chip.active{background:var(--gold);color:#172019;border-color:var(--gold);font-weight:800}
+.calc-slider-wrap{display:flex;align-items:center;gap:16px;margin-top:8px}
+.calc-slider{flex-grow:1;height:6px;border-radius:5px;accent-color:var(--gold);cursor:pointer}
+.calc-slider-val{min-width:96px;font-size:1.1rem;font-weight:800;color:var(--gold);text-align:right}
+.calc-result-box{background:#fff;color:var(--ink);border-radius:20px;padding:32px 28px;display:flex;flex-direction:column;gap:16px;text-align:center;box-shadow:0 15px 40px rgba(0,0,0,.2)}
+.calc-result-box small{font-size:.76rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:700}
+.calc-total{font-size:2.8rem;font-weight:800;color:var(--green);font-family:'Playfair Display',Georgia,serif;line-height:1}
+.calc-breakdown{font-size:.86rem;color:var(--muted);border-top:1px dashed var(--line);border-bottom:1px dashed var(--line);padding:14px 0;display:flex;justify-content:space-between}
+.calc-breakdown span strong{color:var(--ink)}
+/* lightbox modal */
+.lightbox-modal{position:fixed;inset:0;background:rgba(10,25,18,.92);backdrop-filter:blur(10px);z-index:999;display:none;align-items:center;justify-content:center;padding:24px}
+.lightbox-modal.active{display:flex}
+.lightbox-content{max-width:920px;width:100%;background:#fff;border-radius:20px;overflow:hidden;position:relative;animation:modalIn .25s cubic-bezier(.16,1,.3,1)}
+@keyframes modalIn{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}
+.lightbox-close{position:absolute;top:14px;right:16px;width:38px;height:38px;border-radius:50%;background:rgba(0,0,0,.65);color:#fff;border:0;font-size:1.3rem;cursor:pointer;z-index:5;display:grid;place-items:center;transition:.2s}
+.lightbox-close:hover{background:#000}
+.lightbox-img{width:100%;max-height:550px;object-fit:cover;display:block}
+.lightbox-meta{padding:22px 28px;background:var(--cream);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+.lightbox-meta h4{font-family:'Playfair Display',Georgia,serif;font-size:1.35rem;color:var(--green)}
+.lightbox-meta p{font-size:.86rem;color:var(--muted);margin-top:2px}
+.nav-links.open{display:flex;position:absolute;top:70px;left:0;right:0;background:var(--cream);padding:18px 20px;flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line);box-shadow:0 15px 30px rgba(0,0,0,.08)}.nav-links.open .nav-cta{text-align:center}
 </style>
 </head>
 <body>
@@ -52,7 +120,7 @@ footer{background:#0d2d20;color:#fff;padding:50px 0 24px}.footer-grid{display:gr
       <div class="brand-copy"><strong>LAND CO</strong><span>Properties & Construction</span></div>
     </a>
     <nav class="nav-links" aria-label="Primary navigation">
-      <a href="#services">Services</a><a href="#greenview">Plots</a><a href="#construction">Construction</a><a href="#interiors">Interiors</a><a href="#careers">Careers</a><a class="nav-cta" href="#contact">Get in touch</a>
+      <a href="#services">Services</a><a href="#greenview">Plots</a><a href="#construction">Construction</a><a href="#showcase">Elevations</a><a href="#packages">Packages</a><a href="#interiors">Interiors</a><a href="#careers">Careers</a><a class="nav-cta" href="#contact">Get in touch</a>
     </nav>
     <button class="menu" aria-label="Open menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
   </div>
@@ -64,7 +132,7 @@ footer{background:#0d2d20;color:#fff;padding:50px 0 24px}.footer-grid{display:gr
     <div class="eyebrow">Properties · Construction · Interiors</div>
     <h1>Building better homes.<span>Managing every stage.</span></h1>
     <p class="hero-lead">From finding the right residential plot to planning, construction, interiors and handover, LandCo brings the entire home-building journey together under one roof.</p>
-    <div class="actions"><a class="btn btn-primary" href="#construction">Explore Construction →</a><a class="btn btn-secondary" href="#services">View Our Services</a></div>
+    <div class="actions"><a class="btn btn-primary" href="#packages">Explore Packages & Cost →</a><a class="btn btn-secondary" href="#showcase">View Residential Elevations</a></div>
     <div class="hero-meta"><span><strong>Yelahanka</strong> · Bengaluru</span><span><strong>Plot + Construction</strong> · End-to-end</span><span><strong>Turnkey</strong> · Residential</span></div>
   </div>
 </section>
@@ -107,6 +175,254 @@ footer{background:#0d2d20;color:#fff;padding:50px 0 24px}.footer-grid{display:gr
       <article class="phase reveal"><span>02 · BUILD</span><h3>Structure</h3><p>Foundation, RCC, brick/block masonry and core building works.</p></article>
       <article class="phase reveal"><span>03 · SERVICES</span><h3>MEP & Protection</h3><p>Electrical, plumbing and waterproofing coordinated through execution.</p></article>
       <article class="phase reveal"><span>04 · FINISH</span><h3>Complete the Home</h3><p>Flooring, painting, doors, windows, false ceiling, elevation and interiors.</p></article>
+    </div>
+  </div>
+</section>
+
+
+<section id="showcase" class="projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Residential Elevations</span>
+        <h2>Modern homes, built to endure.</h2>
+      </div>
+      <p>Explore our architectural residential elevations designed and executed across Bengaluru — combining thoughtful layouts, natural lighting, contemporary materials, and long-lasting structural strength.</p>
+    </div>
+    <div class="project-grid">
+      <article class="project-card reveal">
+        <div class="project-img-wrap" onclick="openLightbox('assets/residential-01.jpg', 'The Nordic Villa · Yelahanka', '30×50 Plot · 2,800 sq.ft · 4 BHK Contemporary Duplex')">
+          <img src="assets/residential-01.jpg" alt="Modern contemporary residential villa with wood slats and ambient lighting">
+          <span class="project-tag">Yelahanka · 4 BHK Duplex</span>
+          <button class="project-zoom-btn" title="View Full Photo" aria-label="View Full Photo">⤢</button>
+        </div>
+        <div class="project-body">
+          <div class="project-specs">
+            <span class="spec-chip">30 × 50 Plot</span>
+            <span class="spec-chip">2,800 sq.ft Built-up</span>
+            <span class="spec-chip">Contemporary Villa</span>
+          </div>
+          <h3>The Nordic Villa</h3>
+          <p>A warm, contemporary 2-storey independent villa featuring vertical teak slat paneling, expansive double-glazed floor-to-ceiling glass, and warm ambient soffit lighting.</p>
+          <div class="project-features">
+            <span>Vertical Wood Accents</span>
+            <span>Ambient Soffit Illumination</span>
+            <span>Landscaped Entrance</span>
+            <span>Double-height Living</span>
+          </div>
+          <div class="project-footer">
+            <a class="btn btn-secondary" style="padding:10px 18px;font-size:.85rem" href="https://wa.me/917892752145?text=Hi%20LandCo,%20I%20am%20interested%20in%20building%20a%20home%20similar%20to%20The%20Nordic%20Villa%20(4%20BHK%20Duplex)." target="_blank" rel="noopener">Enquire for Similar Build →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-img-wrap" onclick="openLightbox('assets/residential-02.jpg', 'Casa Sereno · Bagalur Road', '30×40 Plot · 2,200 sq.ft · 3 BHK Contemporary')">
+          <img src="assets/residential-02.jpg" alt="Contemporary duplex home with natural stone elevation and glass balcony">
+          <span class="project-tag">Bagalur Rd · 3 BHK</span>
+          <button class="project-zoom-btn" title="View Full Photo" aria-label="View Full Photo">⤢</button>
+        </div>
+        <div class="project-body">
+          <div class="project-specs">
+            <span class="spec-chip">30 × 40 Plot</span>
+            <span class="spec-chip">2,200 sq.ft Built-up</span>
+            <span class="spec-chip">Urban Residence</span>
+          </div>
+          <h3>Casa Sereno</h3>
+          <p>Clean lines, textured natural stone elevation cladding, and cantilevered glass balcony railings adorned with cascading tropical greenery for a refreshing urban facade.</p>
+          <div class="project-features">
+            <span>Natural Stone Cladding</span>
+            <span>Frameless Glass Balcony</span>
+            <span>Paved Entryway</span>
+            <span>Tropical Planter Beds</span>
+          </div>
+          <div class="project-footer">
+            <a class="btn btn-secondary" style="padding:10px 18px;font-size:.85rem" href="https://wa.me/917892752145?text=Hi%20LandCo,%20I%20am%20interested%20in%20building%20a%20home%20similar%20to%20Casa%20Sereno%20(3%20BHK)." target="_blank" rel="noopener">Enquire for Similar Build →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-img-wrap" onclick="openLightbox('assets/residential-03.jpg', 'The Urban Cantilever · Sahakar Nagar', '40×60 Plot · 3,600 sq.ft · 5 BHK Luxury Residence')">
+          <img src="assets/residential-03.jpg" alt="3-storey luxury urban home with geometric architecture and gardens">
+          <span class="project-tag">Sahakar Nagar · 5 BHK</span>
+          <button class="project-zoom-btn" title="View Full Photo" aria-label="View Full Photo">⤢</button>
+        </div>
+        <div class="project-body">
+          <div class="project-specs">
+            <span class="spec-chip">40 × 60 Plot</span>
+            <span class="spec-chip">3,600 sq.ft Built-up</span>
+            <span class="spec-chip">3-Storey Luxury</span>
+          </div>
+          <h3>The Urban Cantilever</h3>
+          <p>Bold architectural statement with floating cantilever volumes, architectural privacy louvers, multi-tier terrace planter decks, and cobblestone parking courtyard.</p>
+          <div class="project-features">
+            <span>Cantilevered Architecture</span>
+            <span>Acoustic Metal Louvers</span>
+            <span>Multi-level Green Decks</span>
+            <span>Cobblestone Driveway</span>
+          </div>
+          <div class="project-footer">
+            <a class="btn btn-secondary" style="padding:10px 18px;font-size:.85rem" href="https://wa.me/917892752145?text=Hi%20LandCo,%20I%20am%20interested%20in%20building%20a%20luxury%20home%20similar%20to%20The%20Urban%20Cantilever." target="_blank" rel="noopener">Enquire for Similar Build →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-img-wrap" onclick="openLightbox('assets/residential-04.jpg', 'Sanskriti Modern Bungalow · IVC Road', '30×50 Plot · 2,650 sq.ft · 4 BHK Independent Villa')">
+          <img src="assets/residential-04.jpg" alt="Modern Indian independent family bungalow with terracotta jali screen">
+          <span class="project-tag">IVC Road · Airport Corridor</span>
+          <button class="project-zoom-btn" title="View Full Photo" aria-label="View Full Photo">⤢</button>
+        </div>
+        <div class="project-body">
+          <div class="project-specs">
+            <span class="spec-chip">30 × 50 Plot</span>
+            <span class="spec-chip">2,650 sq.ft Built-up</span>
+            <span class="spec-chip">Modern Bungalow</span>
+          </div>
+          <h3>Sanskriti Modern Villa</h3>
+          <p>A harmonious fusion of contemporary tropical minimalism with traditional terracotta jali screen breezeways, private gated compound, and rooftop terrace pergola.</p>
+          <div class="project-features">
+            <span>Terracotta Jali Screen</span>
+            <span>Gated Security Compound</span>
+            <span>Thermal Efficiency</span>
+            <span>Terrace Pergola</span>
+          </div>
+          <div class="project-footer">
+            <a class="btn btn-secondary" style="padding:10px 18px;font-size:.85rem" href="https://wa.me/917892752145?text=Hi%20LandCo,%20I%20am%20interested%20in%20building%20a%20home%20similar%20to%20Sanskriti%20Modern%20Villa." target="_blank" rel="noopener">Enquire for Similar Build →</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="packages" class="packages">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Construction Packages</span>
+        <h2>Transparent pricing. Zero surprises.</h2>
+      </div>
+      <p>Fixed-rate, stage-verified turnkey residential construction packages customized for Bengaluru soil conditions and municipal standards. Clear material specifications from day one.</p>
+    </div>
+
+    <div class="package-grid">
+      <!-- Essential -->
+      <article class="package-card reveal">
+        <div class="pkg-header">
+          <span class="eyebrow" style="margin-bottom:8px">Essential</span>
+          <h3>Standard</h3>
+          <p class="pkg-subtitle">Reliable, durable construction for budget-conscious families and high-yield rental builds.</p>
+          <div class="pkg-price">
+            <strong>₹1,750</strong>
+            <span>/ sq.ft built-up (incl. GST)</span>
+          </div>
+        </div>
+        <ul class="pkg-features">
+          <li><span class="pkg-check">✓</span><span><strong>Structure:</strong> Fe550 Grade TMT Steel & 6" solid concrete blocks</span></li>
+          <li><span class="pkg-check">✓</span><span><strong>Flooring:</strong> Double-charged Vitrified Tiles up to ₹60/sq.ft (Kajaria / Somany)</span></li>
+          <li><span class="pkg-check">✓</span><span><strong>Kitchen:</strong> 20mm Polished Black Granite counter with SS Sink</span></li>
+          <li><span class="pkg-check">✓</span><span><strong>Bathrooms:</strong> Cera / Hindware sanitaryware & CP fittings</span></li>
+          <li><span class="pkg-check">✓</span><span><strong>Doors & Windows:</strong> Teak wood main door frame; 2-track aluminum sliding windows</span></li>
+          <li><span class="pkg-check">✓</span><span><strong>Painting:</strong> Asian Paints Tractor Emulsion (Interior) & Apex (Exterior)</span></li>
+          <li><span class="pkg-check">✓</span><span><strong>Electrical:</strong> Anchor Roma modular switches & Finolex fire-resistant wiring</span></li>
+          <li><span class="pkg-check">✓</span><span><strong>Warranty:</strong> 1-Year General Maintenance & 10-Year Structural Guarantee</span></li>
+        </ul>
+        <a class="btn btn-secondary pkg-cta" href="https://wa.me/917892752145?text=Hi%20LandCo,%20I%20am%20interested%20in%20the%20Essential%20Package%20(₹1,750/sqft).%20Please%20share%20the%20detailed%20specifications." target="_blank" rel="noopener">Choose Essential →</a>
+      </article>
+
+      <!-- Premium (Featured) -->
+      <article class="package-card featured reveal">
+        <span class="pkg-badge">★ Most Popular</span>
+        <div class="pkg-header">
+          <span class="eyebrow" style="margin-bottom:8px">Premium</span>
+          <h3>Executive</h3>
+          <p class="pkg-subtitle">The preferred choice for contemporary family homes with premium brand finishes.</p>
+          <div class="pkg-price">
+            <strong style="color:var(--green)">₹2,150</strong>
+            <span>/ sq.ft built-up (incl. GST)</span>
+          </div>
+        </div>
+        <ul class="pkg-features">
+          <li><span class="pkg-check">✓</span><span><strong>Structure:</strong> Tata Tiscon / JSW Fe550D Steel & Wire-cut Red Bricks or Solid Blocks</span></li>
+          <li><span class="pkg-check">✓</span><span><strong>Flooring:</strong> Premium 4×2 Glazed Vitrified Tiles up to ₹95/sq.ft + Granite Staircase</span></li>
+          <li><span class="pkg-check">✓</span><span><strong>Kitchen:</strong> Premium Granite counter (₹160/sq.ft) with Carysil Quartz / Franke Sink</span></li>
+          <li><span class="pkg-check">✓</span><span><strong>Bathrooms:</strong> Jaquar / Kohler Concealed Diverters & Wall-hung Toilets</span></li>
+          <li><span class="pkg-check">✓</span><span><strong>Doors & Windows:</strong> Burma Teak main door with brass hardware; UPVC sliding windows with mesh</span></li>
+          <li><span class="pkg-check">✓</span><span><strong>Painting:</strong> Asian Paints Royale Luxury Interior & Apex Ultima Weatherproof Exterior</span></li>
+          <li><span class="pkg-check">✓</span><span><strong>Electrical:</strong> Legrand Arteor / Schneider switches & Finolex FRLS wiring</span></li>
+          <li><span class="pkg-check">✓</span><span><strong>Warranty:</strong> 1-Year Comprehensive Maintenance & 10-Year Structural Guarantee</span></li>
+        </ul>
+        <a class="btn btn-primary pkg-cta" href="https://wa.me/917892752145?text=Hi%20LandCo,%20I%20am%20interested%20in%20the%20Premium%20Executive%20Package%20(₹2,150/sqft).%20Please%20share%20the%20detailed%20specifications." target="_blank" rel="noopener">Choose Premium →</a>
+      </article>
+
+      <!-- Luxury -->
+      <article class="package-card reveal">
+        <div class="pkg-header">
+          <span class="eyebrow" style="margin-bottom:8px">Luxury</span>
+          <h3>Elite Villa</h3>
+          <p class="pkg-subtitle">Architectural excellence with imported marble, automation conduit, and bespoke detailing.</p>
+          <div class="pkg-price">
+            <strong>₹2,690</strong>
+            <span>/ sq.ft built-up (incl. GST)</span>
+          </div>
+        </div>
+        <ul class="pkg-features">
+          <li><span class="pkg-check">✓</span><span><strong>Architecture:</strong> Custom 3D Elevation, Structural Blueprint & Site Soil Testing included</span></li>
+          <li><span class="pkg-check">✓</span><span><strong>Structure:</strong> Tata Tiscon Fe550D with Waterproof Concrete Additives (Fosroc/Dr. Fixit)</span></li>
+          <li><span class="pkg-check">✓</span><span><strong>Flooring:</strong> Italian Marble or Hardwood in Living & Master Suite (up to ₹250/sq.ft)</span></li>
+          <li><span class="pkg-check">✓</span><span><strong>Bathrooms:</strong> Grohe / Toto Thermostatic Showers, Glass Partitions & Wall-hung Smart Toilets</span></li>
+          <li><span class="pkg-check">✓</span><span><strong>Doors & Windows:</strong> Full Solid Teak Wood Frame & Shutters with Yale Digital Smart Lock</span></li>
+          <li><span class="pkg-check">✓</span><span><strong>Painting:</strong> Asian Paints Royale Aspira / PU Finish Wood Polish & Textured Exterior</span></li>
+          <li><span class="pkg-check">✓</span><span><strong>Smart Living:</strong> Video Door Phone, EV Charger Provision & Solar Water Heater piping</span></li>
+          <li><span class="pkg-check">✓</span><span><strong>Warranty:</strong> 2-Year Full Maintenance & 15-Year Structural Guarantee</span></li>
+        </ul>
+        <a class="btn btn-secondary pkg-cta" href="https://wa.me/917892752145?text=Hi%20LandCo,%20I%20am%20interested%20in%20the%20Luxury%20Elite%20Package%20(₹2,690/sqft).%20Please%20share%20the%20detailed%20specifications." target="_blank" rel="noopener">Choose Luxury →</a>
+      </article>
+    </div>
+
+    <!-- Instant Cost Calculator -->
+    <div class="calc-card reveal">
+      <div>
+        <span class="eyebrow" style="color:#dcebe0">Interactive Estimator</span>
+        <h3>Estimate Your Construction Cost</h3>
+        <p>Select your plot dimension or built-up area and your preferred construction tier for an instant estimate.</p>
+
+        <div class="calc-group">
+          <label class="calc-label">1. Choose Plot Size / Built-up Area</label>
+          <div class="calc-chips">
+            <button type="button" class="calc-chip" onclick="setPlotArea(1200, this)">30×40 (1,200 sq.ft)</button>
+            <button type="button" class="calc-chip active" onclick="setPlotArea(2400, this)">30×40 G+1 (2,400 sq.ft)</button>
+            <button type="button" class="calc-chip" onclick="setPlotArea(3000, this)">30×50 G+1 (3,000 sq.ft)</button>
+            <button type="button" class="calc-chip" onclick="setPlotArea(4000, this)">40×60 G+1 (4,000 sq.ft)</button>
+          </div>
+          <div class="calc-slider-wrap">
+            <input type="range" class="calc-slider" id="areaSlider" min="800" max="6000" step="50" value="2400" oninput="onSliderChange(this.value)">
+            <div class="calc-slider-val" id="areaDisplay">2,400 sq.ft</div>
+          </div>
+        </div>
+
+        <div class="calc-group" style="margin-bottom:0">
+          <label class="calc-label">2. Select Package Tier</label>
+          <div class="calc-chips">
+            <button type="button" class="calc-chip" id="pkgBtnEssential" onclick="setPackage('essential', 1750, 'Essential Package (₹1,750/sq.ft)', this)">Essential · ₹1,750</button>
+            <button type="button" class="calc-chip active" id="pkgBtnPremium" onclick="setPackage('premium', 2150, 'Premium Package (₹2,150/sq.ft)', this)">Premium · ₹2,150</button>
+            <button type="button" class="calc-chip" id="pkgBtnLuxury" onclick="setPackage('luxury', 2690, 'Luxury Package (₹2,690/sq.ft)', this)">Luxury · ₹2,690</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="calc-result-box">
+        <small>Estimated Project Cost</small>
+        <div class="calc-total" id="calcTotalDisplay">₹51,60,000</div>
+        <div class="calc-breakdown">
+          <span>Area: <strong id="breakdownArea">2,400 sq.ft</strong></span>
+          <span>Rate: <strong id="breakdownRate">₹2,150/sqft</strong></span>
+        </div>
+        <p style="font-size:.78rem;color:var(--muted);margin:0">*Includes architectural planning, structural execution, materials, GST & stage supervision.</p>
+        <a class="btn btn-primary" id="calcWhatsappBtn" href="https://wa.me/917892752145?text=Hi%20LandCo,%20I%20used%20your%20website%20calculator.%20Built-up:%202400%20sq.ft,%20Package:%20Premium%20Package%20(₹2,150/sq.ft),%20Estimated%20Cost:%20₹51,60,000.%20Please%20share%20the%20detailed%20BoQ." target="_blank" rel="noopener">Get Itemized BoQ on WhatsApp →</a>
+      </div>
     </div>
   </div>
 </section>
@@ -199,17 +515,108 @@ footer{background:#0d2d20;color:#fff;padding:50px 0 24px}.footer-grid{display:gr
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand"><img src="assets/landco-logo.png" alt="LandCo"><p>LandCo Properties & Construction — plots, residential construction and interiors in Bengaluru.</p></div>
-      <div><h3>Explore</h3><div class="footer-links"><a href="#services">Services</a><a href="#greenview">Green View</a><a href="#construction">Construction</a><a href="#interiors">Interiors</a><a href="#careers">Careers</a></div></div>
+      <div><h3>Explore</h3><div class="footer-links"><a href="#services">Services</a><a href="#greenview">Plots (Green View)</a><a href="#construction">Construction</a><a href="#showcase">Elevations Showcase</a><a href="#packages">Packages & Pricing</a><a href="#interiors">Interiors</a><a href="#careers">Careers</a></div></div>
       <div><h3>Contact</h3><div class="footer-links"><a href="tel:+917337822512">7337822512 · Branch Manager</a><a href="https://wa.me/917892752145">7892752145 · WhatsApp</a><a href="tel:+917892752145">7892752145 · Hiring</a><a href="mailto:landcoconstructionss@gmail.com">landcoconstructionss@gmail.com</a></div></div>
     </div>
     <div class="copyright"><span>© 2026 LandCo Properties & Construction</span><span>Yelahanka · Bengaluru</span></div>
   </div>
 </footer>
+<!-- Lightbox Modal -->
+<div id="lightboxModal" class="lightbox-modal" onclick="if(event.target===this)closeLightbox()">
+  <div class="lightbox-content">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close photo preview">✕</button>
+    <img id="lightboxImg" class="lightbox-img" src="" alt="Enlarged residential project photo">
+    <div class="lightbox-meta">
+      <div>
+        <h4 id="lightboxTitle">Project Title</h4>
+        <p id="lightboxSubtitle">Project details</p>
+      </div>
+      <a class="btn btn-primary" id="lightboxInquireBtn" href="https://wa.me/917892752145" target="_blank" rel="noopener">Inquire on WhatsApp →</a>
+    </div>
+  </div>
+</div>
+
 <script>
-const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-const links=document.querySelectorAll('.nav-links a');links.forEach(a=>a.addEventListener('click',()=>document.querySelector('.nav-links').classList.remove('open')));
+// Reveal animation
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) e.target.classList.add('visible');
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// Navigation click
+const links = document.querySelectorAll('.nav-links a');
+links.forEach(a => a.addEventListener('click', () => {
+  document.querySelector('.nav-links').classList.remove('open');
+}));
+
+// Cost Calculator Logic
+let calcArea = 2400;
+let calcRate = 2150;
+let calcPkgName = 'Premium Package (₹2,150/sq.ft)';
+
+function updateCalc() {
+  const total = calcArea * calcRate;
+  const formattedTotal = '₹' + total.toLocaleString('en-IN');
+  const formattedArea = calcArea.toLocaleString('en-IN') + ' sq.ft';
+  document.getElementById('calcTotalDisplay').textContent = formattedTotal;
+  document.getElementById('areaDisplay').textContent = formattedArea;
+  document.getElementById('breakdownArea').textContent = formattedArea;
+  document.getElementById('breakdownRate').textContent = '₹' + calcRate.toLocaleString('en-IN') + '/sqft';
+  document.getElementById('areaSlider').value = calcArea;
+
+  const msg = encodeURIComponent(`Hi LandCo, I used your website calculator. Built-up Area: ${formattedArea}, Package: ${calcPkgName}, Estimated Budget: ${formattedTotal}. Please share the detailed itemized BoQ and schedule a consultation.`);
+  document.getElementById('calcWhatsappBtn').href = `https://wa.me/917892752145?text=${msg}`;
+}
+
+function setPlotArea(area, btn) {
+  calcArea = area;
+  if (btn) {
+    btn.parentElement.querySelectorAll('.calc-chip').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+  }
+  updateCalc();
+}
+
+function onSliderChange(val) {
+  calcArea = parseInt(val, 10);
+  document.querySelectorAll('.calc-chips button').forEach(c => c.classList.remove('active'));
+  updateCalc();
+}
+
+function setPackage(pkg, rate, name, btn) {
+  calcRate = rate;
+  calcPkgName = name;
+  if (btn) {
+    btn.parentElement.querySelectorAll('.calc-chip').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+  }
+  updateCalc();
+}
+
+// Lightbox Logic
+function openLightbox(src, title, subtitle) {
+  document.getElementById('lightboxImg').src = src;
+  document.getElementById('lightboxTitle').textContent = title;
+  document.getElementById('lightboxSubtitle').textContent = subtitle;
+  const msg = encodeURIComponent(`Hi LandCo, I saw the photo of ${title} (${subtitle}) on your website and would like more details on floor plans and construction pricing.`);
+  document.getElementById('lightboxInquireBtn').href = `https://wa.me/917892752145?text=${msg}`;
+  document.getElementById('lightboxModal').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  document.getElementById('lightboxModal').classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeLightbox();
+});
+
+// Run initial calc update
+updateCalc();
 </script>
-<style>.nav-links.open{display:flex;position:absolute;top:70px;left:0;right:0;background:var(--cream);padding:18px 20px;flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line);box-shadow:0 15px 30px rgba(0,0,0,.08)}.nav-links.open .nav-cta{text-align:center}</style>
 </body>
 </html>

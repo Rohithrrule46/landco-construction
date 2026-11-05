@@ -16,6 +16,7 @@ assets/
   interior-1.jpeg ... interior-5.jpeg
   greenview-01.jpeg ... greenview-04.jpeg
   greenview-layout.jpeg
+  residential-01.jpg ... residential-04.jpg
 
 The website does not depend on external image URLs. All project, construction and interior images are local.
 
