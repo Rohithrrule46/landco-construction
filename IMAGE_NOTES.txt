@@ -4,11 +4,11 @@ LOCAL IMAGE INVENTORY
 landco-logo.png          Company logo supplied/previously used by LandCo
 construction-01.jpg      AI-generated representative construction image
 construction-02.jpg      AI-generated representative construction image
-interior-1.jpeg          Existing LandCo interior image
-interior-2.jpeg          Existing LandCo interior image
-interior-3.jpeg          Existing LandCo interior image
-interior-4.jpeg          Existing LandCo interior image
-interior-5.jpeg          Existing LandCo interior image
+interior-1.jpeg          Master bedroom with curved modern bed & tropical mural wallpaper (LandCo team)
+interior-2.jpeg          Corner L-shaped sliding wardrobe with marble loft shutters (LandCo team)
+interior-3.jpeg          Modular L-shaped kitchen with under-cabinet LED strip lighting (LandCo team)
+interior-4.jpeg          Kitchen hob, chimney & overhead glass display cabinetry (LandCo team)
+interior-5.jpeg          Sliding wardrobe with integrated window bay daybed seating (LandCo team)
 greenview-01.jpeg        Green View site photo supplied by user
 greenview-02.jpeg        Green View site photo supplied by user
 greenview-03.jpeg        Green View site photo supplied by user
