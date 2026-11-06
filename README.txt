@@ -14,6 +14,7 @@ assets/
   construction-01.jpg
   construction-02.jpg
   interior-1.jpeg ... interior-5.jpeg
+  interior-01.jpg ... interior-05.jpg
   greenview-01.jpeg ... greenview-04.jpeg
   greenview-layout.jpeg
   residential-01.jpg ... residential-04.jpg

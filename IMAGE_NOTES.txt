@@ -4,17 +4,30 @@ LOCAL IMAGE INVENTORY
 landco-logo.png          Company logo supplied/previously used by LandCo
 construction-01.jpg      AI-generated representative construction image
 construction-02.jpg      AI-generated representative construction image
-interior-1.jpeg          Master bedroom with curved modern bed & tropical mural wallpaper (LandCo team)
-interior-2.jpeg          Corner L-shaped sliding wardrobe with marble loft shutters (LandCo team)
-interior-3.jpeg          Modular L-shaped kitchen with under-cabinet LED strip lighting (LandCo team)
-interior-4.jpeg          Kitchen hob, chimney & overhead glass display cabinetry (LandCo team)
-interior-5.jpeg          Sliding wardrobe with integrated window bay daybed seating (LandCo team)
+
+PREVIOUS INTERIOR COLLECTION:
+interior-1.jpeg          Living & dining concept with open layout (1600x900)
+interior-2.jpeg          Contemporary living lounge & TV unit (1600x900)
+interior-3.jpeg          Living space with false ceiling & lighting (1600x900)
+interior-4.jpeg          Master bedroom layout & space planning (1600x900)
+interior-5.jpeg          Modern bedroom finishes & styling (1600x900)
+
+IN-HOUSE TEAM INTERIOR EXECUTIONS (UPSCALED 2K):
+interior-01.jpg          Master bedroom suite with tropical mural & curved bed (2048x1442)
+interior-02.jpg          Corner L-shaped sliding wardrobe with marble lofts (2048x1536)
+interior-03.jpg          L-shaped modular kitchen with under-cabinet strip lighting (2048x1536)
+interior-04.jpg          Kitchen hob, chimney & illuminated glass display cabinetry (2048x1536)
+interior-05.jpg          Sliding wardrobe with attached window bay daybed storage (2048x1536)
+
+PROJECT & ELEVATION ASSETS:
 greenview-01.jpeg        Green View site photo supplied by user
 greenview-02.jpeg        Green View site photo supplied by user
 greenview-03.jpeg        Green View site photo supplied by user
 greenview-04.jpeg        Green View site photo supplied by user
-greenview-layout.jpeg   Green View layout image supplied by user
-residential-01.jpg      Modern contemporary 2-storey villa with wood slat accents
-residential-02.jpg      Contemporary duplex home with stone cladding and glass balcony
-residential-03.jpg      3-storey luxury urban home with cantilever geometry and gardens
-residential-04.jpg      Premium modern Indian family bungalow with jali screen facade
+greenview-layout.jpeg    Green View layout image supplied by user
+residential-01.jpg       Modern contemporary 2-storey villa with wood slat accents
+residential-02.jpg       Contemporary duplex home with stone cladding and glass balcony
+residential-03.jpg       3-storey luxury urban home with cantilever geometry and gardens
+residential-04.jpg       Premium modern Indian family bungalow with jali screen facade
+favicon.png              32x32 / 64x64 browser tab icon
+favicon.ico              Windows / browser multi-size favicon

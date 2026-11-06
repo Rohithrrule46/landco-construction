@@ -101,6 +101,19 @@ section{padding:105px 0}.section-head{display:flex;justify-content:space-between
 .control{background:var(--green);color:#fff}.control-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:70px;align-items:center}.control-copy h2{margin:14px 0 18px}.control-copy p{font-size:1.02rem}.control-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}.control-item{border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);padding:23px;border-radius:17px}.control-item strong{display:block;color:#fff;margin-bottom:5px}.control-item span{font-size:.83rem;color:#c9d8ce}
 /* interiors */
 .interiors{background:#fff}.interior-mosaic{display:grid;grid-template-columns:1.15fr .85fr;grid-template-rows:260px 260px;gap:15px}.interior-mosaic figure{overflow:hidden;border-radius:20px;background:#ddd}.interior-mosaic figure:first-child{grid-row:1/3}.interior-mosaic img{width:100%;height:100%;object-fit:cover;transition:.5s}.interior-mosaic figure:hover img{transform:scale(1.04)}.interior-mosaic figure,.property-gallery figure{cursor:pointer;position:relative}.interior-zoom-hint{position:absolute;bottom:14px;right:14px;background:rgba(18,61,42,.88);color:#fff;font-size:.72rem;font-weight:700;padding:5px 12px;border-radius:999px;opacity:0;transform:translateY(4px);transition:.25s ease;backdrop-filter:blur(6px);display:flex;align-items:center;gap:5px;pointer-events:none}.interior-mosaic figure:hover .interior-zoom-hint,.property-gallery figure:hover .interior-zoom-hint{opacity:1;transform:none}.interior-note{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}.note{padding:20px;border-radius:17px;background:var(--cream);border:1px solid var(--line)}.note strong{display:block;color:var(--green);margin-bottom:5px}.note span{font-size:.82rem;color:var(--muted)}
+
+/* team interior cards */
+.team-interior-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.team-interior-card{background:var(--cream);border:1px solid var(--line);border-radius:20px;overflow:hidden;margin:0;cursor:pointer;transition:.3s transform,.3s box-shadow;display:flex;flex-direction:column}
+.team-interior-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#b8cec0}
+.team-interior-img-wrap{position:relative;height:240px;overflow:hidden;background:#ddd}
+.team-interior-img-wrap img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.team-interior-card:hover .team-interior-img-wrap img{transform:scale(1.05)}
+.team-interior-tag{position:absolute;top:14px;left:14px;background:rgba(18,61,42,.88);backdrop-filter:blur(6px);color:#fff;font-size:.7rem;font-weight:700;padding:4px 10px;border-radius:999px;letter-spacing:.05em;text-transform:uppercase}
+.team-interior-card figcaption{padding:18px 20px;display:flex;flex-direction:column;gap:4px}
+.team-interior-card figcaption strong{color:var(--green);font-size:1.02rem}
+.team-interior-card figcaption span{font-size:.82rem;color:var(--muted)}
+
 /* journey */
 .journey{background:#f7f4e9}.journey-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;position:relative}.journey-step{position:relative;background:#fff;padding:24px 17px;border-radius:18px;border:1px solid #e6dfc8;min-height:180px}.journey-step b{display:inline-flex;width:34px;height:34px;align-items:center;justify-content:center;border-radius:50%;background:var(--green);color:#fff;font-size:.78rem}.journey-step h3{font-size:1rem;margin:18px 0 7px}.journey-step p{font-size:.78rem}
 /* careers */
@@ -643,42 +656,120 @@ footer{background:#0d2d20;color:#fff;padding:50px 0 24px}.footer-grid{display:gr
   <div class="container">
     <div class="section-head reveal">
       <div>
-        <span class="eyebrow">Interiors by LandCo</span>
-        <h2>Designed and crafted by our team.</h2>
+        <span class="eyebrow">Residential Interiors</span>
+        <h2>Designed for the way you live.</h2>
       </div>
-      <p>Explore real residential interior projects designed and executed by LandCo's in-house interior team — bespoke modular kitchens with warm profile lighting, space-optimized wardrobes, ceiling designs, and curated master suites.</p>
+      <p>Our residential interiors bring together practical space planning, premium materials, ambient lighting, and a cohesive visual language — coordinated seamlessly from structure through final handover.</p>
     </div>
+
+    <!-- Collection 1: Living, Lounge & Master Suite Concepts (interior-1 to interior-5) -->
     <div class="interior-mosaic">
-      <figure class="reveal" onclick="openLightbox('assets/interior-1.jpeg', 'Master Bedroom Suite', 'Contemporary curved bed frame, tropical mural accent wallpaper, and wooden venetian blinds')">
-        <img src="assets/interior-1.jpeg" alt="LandCo master bedroom interior with tropical mural and curved bed frame">
-        <div class="interior-zoom-hint">⤢ View High-Res</div>
+      <figure class="reveal" onclick="openLightbox('assets/interior-1.jpeg', 'Residential Living & Dining Concept', 'Open-concept living and dining layout with warm natural lighting')">
+        <img src="assets/interior-1.jpeg" alt="LandCo residential interior living concept">
+        <div class="interior-zoom-hint">⤢ View Full</div>
       </figure>
-      <figure class="reveal" onclick="openLightbox('assets/interior-2.jpeg', 'Corner L-Shaped Sliding Wardrobe', 'Fluted marble-texture loft shutters with sage-green sliding wardrobes & integrated storage')">
-        <img src="assets/interior-2.jpeg" alt="Corner L-shaped sliding wardrobe interior design with marble lofts">
-        <div class="interior-zoom-hint">⤢ View High-Res</div>
+      <figure class="reveal" onclick="openLightbox('assets/interior-2.jpeg', 'Contemporary Living Room Lounge', 'Living lounge interior featuring ambient cove lighting and clean architectural geometry')">
+        <img src="assets/interior-2.jpeg" alt="LandCo living room interior concept">
+        <div class="interior-zoom-hint">⤢ View Full</div>
       </figure>
-      <figure class="reveal" onclick="openLightbox('assets/interior-3.jpeg', 'Contemporary Modular Kitchen', 'L-shaped layout with under-cabinet warm LED profile lighting & polished black countertop')">
-        <img src="assets/interior-3.jpeg" alt="Modular kitchen design with under-cabinet LED strip lighting">
-        <div class="interior-zoom-hint">⤢ View High-Res</div>
+      <figure class="reveal" onclick="openLightbox('assets/interior-3.jpeg', 'Curated Living Space & Ceiling', 'Cohesive color palette, integrated false ceiling illumination, and bespoke furnishings')">
+        <img src="assets/interior-3.jpeg" alt="LandCo residential interior design">
+        <div class="interior-zoom-hint">⤢ View Full</div>
       </figure>
     </div>
+
+    <div class="property-gallery" style="margin-top:16px">
+      <figure class="reveal" onclick="openLightbox('assets/interior-4.jpeg', 'Master Suite Space Planning', 'Spacious master bedroom design balancing movement, storage flow, and relaxation')">
+        <img src="assets/interior-4.jpeg" alt="LandCo residential bedroom interior">
+        <div class="interior-zoom-hint">⤢ View Full</div>
+      </figure>
+      <figure class="reveal" onclick="openLightbox('assets/interior-5.jpeg', 'Modern Bedroom Finishes', 'Contemporary bedroom styling with textured wall accents and warm ambient lighting')">
+        <img src="assets/interior-5.jpeg" alt="LandCo residential bedroom interior styling">
+        <div class="interior-zoom-hint">⤢ View Full</div>
+      </figure>
+    </div>
+
     <div class="interior-note">
-      <div class="note reveal"><strong>Space Planning</strong><span>Layouts that balance circulation, storage, and everyday comfort.</span></div>
+      <div class="note reveal"><strong>Space Planning</strong><span>Layouts that balance circulation, ventilation, storage and everyday use.</span></div>
       <div class="note reveal"><strong>Modular Kitchens & Wardrobes</strong><span>Custom cabinetry, soft-close hardware, and integrated storage solutions.</span></div>
       <div class="note reveal"><strong>Lighting & Finishes</strong><span>Warm ambient profile lighting, false ceilings, and designer wall accents.</span></div>
     </div>
-    <div class="property-gallery" style="margin-top:18px">
-      <figure class="reveal" onclick="openLightbox('assets/interior-4.jpeg', 'Kitchen Hob & Glass Display Units', 'Built-in chimney, handleless lower drawers, and illuminated upper glass cabinetry')">
-        <img src="assets/interior-4.jpeg" alt="Kitchen hob, chimney and upper glass display cabinetry">
-        <div class="interior-zoom-hint">⤢ View High-Res</div>
-      </figure>
-      <figure class="reveal" onclick="openLightbox('assets/interior-5.jpeg', 'Wardrobe with Integrated Daybed', 'Dual sliding wardrobe with geometric arched styling & built-in window daybed storage')">
-        <img src="assets/interior-5.jpeg" alt="Sliding wardrobe with integrated window bay daybed seating">
-        <div class="interior-zoom-hint">⤢ View High-Res</div>
-      </figure>
-    </div>
-    <div style="text-align:center;margin-top:35px" class="reveal">
-      <a class="btn btn-primary" href="https://wa.me/917892752145?text=Hi%20LandCo,%20I%20am%20interested%20in%20consulting%20with%20your%20interior%20design%20team%20for%20my%20home." target="_blank" rel="noopener">Schedule Interior Design Consultation →</a>
+
+    <!-- Collection 2: Custom In-House Team Executions (interior-01 to interior-05) -->
+    <div style="margin-top:72px">
+      <div class="section-head reveal" style="margin-bottom:28px">
+        <div>
+          <span class="eyebrow">In-House Team Work</span>
+          <h3 style="font-size:clamp(1.85rem,3.5vw,2.5rem);font-family:'Playfair Display',Georgia,serif;color:var(--green)">Custom Modular Kitchens & Woodwork.</h3>
+        </div>
+        <p>Bespoke residential interior projects executed by our in-house design and woodwork team — precision modular kitchens with under-cabinet profile lighting, space-maximizing sliding wardrobes, and custom bedroom styling.</p>
+      </div>
+
+      <div class="team-interior-grid">
+        <figure class="team-interior-card reveal" onclick="openLightbox('assets/interior-01.jpg', 'Master Bedroom Suite', 'Contemporary curved platform bed, tropical palm mural accent wallpaper, and wooden venetian blinds')">
+          <div class="team-interior-img-wrap">
+            <img src="assets/interior-01.jpg" alt="LandCo master bedroom interior with tropical mural and curved bed frame">
+            <span class="team-interior-tag">Bedroom Suite</span>
+            <div class="interior-zoom-hint">⤢ View 2K</div>
+          </div>
+          <figcaption>
+            <strong>Master Bedroom Suite</strong>
+            <span>Curved modern bed frame & tropical mural wall</span>
+          </figcaption>
+        </figure>
+
+        <figure class="team-interior-card reveal" onclick="openLightbox('assets/interior-02.jpg', 'Corner L-Shaped Sliding Wardrobe', 'Fluted marble-texture loft shutters with sage-green sliding wardrobes & integrated storage')">
+          <div class="team-interior-img-wrap">
+            <img src="assets/interior-02.jpg" alt="Corner L-shaped sliding wardrobe interior design with marble lofts">
+            <span class="team-interior-tag">Wardrobe</span>
+            <div class="interior-zoom-hint">⤢ View 2K</div>
+          </div>
+          <figcaption>
+            <strong>Corner L-Shaped Wardrobe</strong>
+            <span>Marble loft shutters with sage-green sliding panels</span>
+          </figcaption>
+        </figure>
+
+        <figure class="team-interior-card reveal" onclick="openLightbox('assets/interior-03.jpg', 'Contemporary Modular Kitchen', 'L-shaped layout with under-cabinet warm LED profile lighting & polished black countertop')">
+          <div class="team-interior-img-wrap">
+            <img src="assets/interior-03.jpg" alt="Modular kitchen design with under-cabinet LED strip lighting">
+            <span class="team-interior-tag">Modular Kitchen</span>
+            <div class="interior-zoom-hint">⤢ View 2K</div>
+          </div>
+          <figcaption>
+            <strong>L-Shaped Modular Kitchen</strong>
+            <span>Warm profile strip lighting & two-tone cabinetry</span>
+          </figcaption>
+        </figure>
+
+        <figure class="team-interior-card reveal" onclick="openLightbox('assets/interior-04.jpg', 'Kitchen Hob & Glass Display Units', 'Built-in chimney, handleless lower drawers, and illuminated upper glass cabinetry')">
+          <div class="team-interior-img-wrap">
+            <img src="assets/interior-04.jpg" alt="Kitchen hob, chimney and upper glass display cabinetry">
+            <span class="team-interior-tag">Kitchen Detailing</span>
+            <div class="interior-zoom-hint">⤢ View 2K</div>
+          </div>
+          <figcaption>
+            <strong>Hob & Glass Display Cabinetry</strong>
+            <span>Built-in chimney & illuminated glass loft units</span>
+          </figcaption>
+        </figure>
+
+        <figure class="team-interior-card reveal" onclick="openLightbox('assets/interior-05.jpg', 'Wardrobe with Integrated Daybed', 'Dual sliding wardrobe with geometric arched styling & built-in window daybed storage')">
+          <div class="team-interior-img-wrap">
+            <img src="assets/interior-05.jpg" alt="Sliding wardrobe with integrated window bay daybed seating">
+            <span class="team-interior-tag">Smart Storage</span>
+            <div class="interior-zoom-hint">⤢ View 2K</div>
+          </div>
+          <figcaption>
+            <strong>Wardrobe + Window Daybed</strong>
+            <span>Sliding wardrobe with attached bay seating storage</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div style="text-align:center;margin-top:40px" class="reveal">
+        <a class="btn btn-primary" href="https://wa.me/917892752145?text=Hi%20LandCo,%20I%20am%20interested%20in%20consulting%20with%20your%20interior%20design%20team%20for%20my%20home." target="_blank" rel="noopener">Schedule Interior Design Consultation →</a>
+      </div>
     </div>
   </div>
 </section>
