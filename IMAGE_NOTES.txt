@@ -5,14 +5,14 @@ landco-logo.png          Company logo supplied/previously used by LandCo
 construction-01.jpg      AI-generated representative construction image
 construction-02.jpg      AI-generated representative construction image
 
-PREVIOUS INTERIOR COLLECTION:
-interior-1.jpeg          Living & dining concept with open layout (1600x900)
-interior-2.jpeg          Contemporary living lounge & TV unit (1600x900)
-interior-3.jpeg          Living space with false ceiling & lighting (1600x900)
-interior-4.jpeg          Master bedroom layout & space planning (1600x900)
-interior-5.jpeg          Modern bedroom finishes & styling (1600x900)
+LANDCO IN-HOUSE TEAM COMPLETED INTERIORS (LIVING, DINING & BEDROOM SUITE):
+interior-1.jpeg          Living & dining interior execution with open layout (1600x900)
+interior-2.jpeg          Contemporary living lounge & media wall execution (1600x900)
+interior-3.jpeg          Living space with false ceiling & profile lighting execution (1600x900)
+interior-4.jpeg          Master bedroom layout & space planning execution (1600x900)
+interior-5.jpeg          Modern bedroom finishes & wall styling execution (1600x900)
 
-IN-HOUSE TEAM INTERIOR EXECUTIONS (UPSCALED 2K):
+LANDCO IN-HOUSE TEAM COMPLETED INTERIORS (MODULAR KITCHENS & WOODWORK - UPSCALED 2K):
 interior-01.jpg          Master bedroom suite with tropical mural & curved bed (2048x1442)
 interior-02.jpg          Corner L-shaped sliding wardrobe with marble lofts (2048x1536)
 interior-03.jpg          L-shaped modular kitchen with under-cabinet strip lighting (2048x1536)
